@@ -17,6 +17,7 @@ This project is a sample project to retrieve and show weather data. It is only f
 [x] Isolate chart component to allow other chart libraries, example, D3, ngx-charts, ...  
 
 ### Coming soon
+[ ] Date min/max validation
 [ ] Redux approach  
 [ ] Unit tests  
 
