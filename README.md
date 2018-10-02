@@ -15,6 +15,7 @@ This project is a sample project to retrieve and show weather data. It is only f
 [x] Fetch master data (locations, metrics)  
 [x] Simulate the date filtering  
 [x] Isolate chart component to allow other chart libraries, example, D3, ngx-charts, ...  
+[x] Deployed to Azure: http://weather.m-xply.com  
 
 ### Coming soon
 [ ] Date min/max validation  
