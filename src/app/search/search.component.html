@@ -1,0 +1,46 @@
+
+
+<mat-card>
+    <mat-card-title>
+      Interview Question
+    </mat-card-title>
+    <mat-card-subtitle>
+      Render UK Weather data by dates
+    </mat-card-subtitle>
+    <mat-card-content>
+        <form [formGroup]="searchForm" fxLayout="row wrap" 
+        fxLayout.xs="column" 
+        fxFlexFill fxLayoutGap="10px" >
+      
+            <mat-form-field >
+              <mat-label>Metric</mat-label>
+              <mat-select required formControlName="metric">
+                  <mat-option *ngFor="let metric of metrics" [value]="metric">{{metric}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+    
+            <mat-form-field>
+              <mat-label>Location</mat-label>
+              <mat-select required formControlName="location">
+                <mat-option *ngFor="let location of locations" [value]="location">{{location}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+      
+            <mat-form-field>
+                <input matInput [matDatepicker]="dpfrom" placeholder="From" formControlName="from" required>
+                <mat-datepicker-toggle matSuffix [for]="dpfrom"></mat-datepicker-toggle>
+                <mat-datepicker #dpfrom>
+              </mat-datepicker> 
+            </mat-form-field>
+              
+            <mat-form-field>
+                <input matInput [matDatepicker]="dpto" placeholder="To" formControlName="to" required>
+                <mat-datepicker-toggle matSuffix [for]="dpto"></mat-datepicker-toggle>
+                <mat-datepicker #dpto >
+              </mat-datepicker> 
+            </mat-form-field>
+    
+        </form>
+    </mat-card-content>
+  </mat-card>
+  

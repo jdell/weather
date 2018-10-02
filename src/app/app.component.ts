@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ILocation } from 'selenium-webdriver';
+import { IMetric } from './models/metric';
+import { DataService } from './services/data.service';
+import { Observable } from 'rxjs';
+import { IWeatherRQ, IWeatherRS } from './models/weather';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +11,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  items: IWeatherRS[];
+
+  constructor(private dataService: DataService) {
+
+  }
+
+  load(request: IWeatherRQ): void {
+    this.dataService.getWeather(request).subscribe(items => {
+      this.items = items;
+    }, err => {
+      // Show error
+    });
+  }
 }
