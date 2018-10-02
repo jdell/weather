@@ -4,21 +4,21 @@ This project is a sample project to retrieve and show weather data. It is only f
 
 ## Features
 ### Must
-[x] Display monthly weather data as a chart
-[x] Be responsive
-[x] Fetch data on-demand from S3 to show a single metric for a single geographic region between two user-supplied dates
-[x] Graph automatically updated when the dates are changed
-[x] Runnable out of the box
+[x] Display monthly weather data as a chart  
+[x] Be responsive  
+[x] Fetch data on-demand from S3 to show a single metric for a single geographic region between two user-supplied dates  
+[x] Graph automatically updated when the dates are changed  
+[x] Runnable out of the box  
 
 ### Extra
-[x] Caching requests
-[x] Fetch master data (locations, metrics)
-[x] Simulate the date filtering
-[x] Isolate chart component to allow other chart libraries, example, D3, ngx-charts, ...
+[x] Caching requests  
+[x] Fetch master data (locations, metrics)  
+[x] Simulate the date filtering  
+[x] Isolate chart component to allow other chart libraries, example, D3, ngx-charts, ...  
 
 ### Coming soon
-[ ] Redux approach
-[ ] Unit tests
+[ ] Redux approach  
+[ ] Unit tests  
 
 
 ## Development server
